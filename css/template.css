@@ -17,7 +17,7 @@ body {
 	position: relative;
 	font-family: 'Roboto Slab', serif;
 }
-article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section,main { 
+article,aside,details,figcaption,figure,footer,hgroup,menu,nav,section,main { 
     display: block;
 }
 hr {
@@ -104,6 +104,9 @@ img.img-full-width {
 	display: -ms-flexbox;
 	display: flex;
 }
+
+
+
 .fsr {
 	-webkit-flex-shrink: 0;
 	flex-shrink: 0;
@@ -115,6 +118,16 @@ img.img-full-width {
 .fw {
 	flex-wrap: nowrap;
 }
+
+.leftside-fw {
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+[layout="leftitem"] {
+	flex : 100%;	
+}
+
 .verticalCenter {
 	-ms-flex-align: center;
 	-webkit-align-items: center;
@@ -258,7 +271,6 @@ article .nino-articleMeta .nino-icon {
 #nino-leftSide section {
 	margin-bottom: 35px;
 	padding: 0 30px;
-	flex: 100%;
 }
 #nino-leftSide .nino-mySkill .progress {
 	margin: 0;
@@ -358,14 +370,18 @@ article .nino-articleMeta .nino-icon {
 		margin: 0;
 		border: 1px solid rgba(255, 255, 255, 0.25);
 		border-width: 0 1px 1px 0;
-
-		flex: 50%;
 	}
 	#nino-leftSide section {
 		padding: 35px 30px;
 
 		
 	}
+
+	[layout="leftitem"] {
+		flex : 42%;	
+		
+	}
+
 }
 @media (max-width: 767px) {
 	
