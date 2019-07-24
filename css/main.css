@@ -20,6 +20,7 @@ body {
 
 #mainmenu {
     margin: 15px 0;
+    display: block;
 }
 
 #mainmenu ul {
@@ -28,15 +29,22 @@ body {
 
 #mainmenu ul li {
     list-style: none;
+    display: inline-block;
 }
 
-#mainmenu ul li a { 
+#mainmenu ul li a {
     float : right;
     padding: 10px;
     text-transform: uppercase;
     font-weight: 500;
 }
 
+#mainmenu ul li .nino-icon {
+    font-size: 18px;
+    position: relative;
+    top:2px;
+    margin-right: 5px;
+}
 
 a {
     text-decoration: none;
@@ -54,23 +62,17 @@ a {
 #nino-leftside {
     
     flex: 30%;
-
+    /* width: 30%; */
     display: flex;
     flex-wrap: wrap;
     background: #37474f;
     color:#fdfdfe;
-    text-align: center;
-    
 }
 
 #nino-rightside {
     
     flex : 70%;
-
-    background:#263238;
-    color:#fdfdfe;
-    text-align: center;
-    
+    /* width : 70%; */
 }
 
 
@@ -79,10 +81,116 @@ a {
     border: none;
     
     flex: 100%;
-
-    height:100px;
-    outline: 1px solid green;
+    
 }
+
+.header {
+    text-align: center;
+     padding: 35px 0; 
+    margin-bottom: 35px; 
+    background: #263238;
+}
+
+
+.header .avatar {
+    width: 150px;
+    border-radius: 50%;
+    background: #37474f;
+    padding: 4px;
+    margin-bottom: 10px;
+    vertical-align: middle;
+}
+
+.header .name {
+    font-size: 20px;
+    margin-bottom: 8px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 5px 0 10px;
+    text-transform: uppercase;
+    font-weight: 400;
+    line-height: 1.4;
+}
+
+#nino-leftside .section {
+    margin-bottom: 35px;
+    /* padding: 0 30px; */
+}
+ #nino-leftside .mysection {
+    padding: 0 30px;
+ }
+#nino-leftside .section .nino-sectionHeading{
+    font-size: 16px;
+    font-weight: 700;
+}
+
+#nino-leftside .section .nino-icon{
+    background: #263238;
+    padding: 8px;
+    border-radius: 50%;
+    margin-right: 10px;
+    font-size: 20px;
+    color: #fff;
+}
+
+#nino-leftSide .nino-listWithIcon > li {
+	margin-bottom: 10px;
+}
+#nino-leftSide .nino-listWithIcon .nino-icon {
+	background: #fff;
+	color: #263238;
+	padding: 5px;
+	border-radius: 50%;
+	margin: 0 15px 0 4px;
+	font-size: 14px;
+}
+
+#nino-leftSide ul li {
+    list-style: none;
+}
+
+ul, ul li,
+ol, ol li,
+p, form, input {
+	margin: 0;
+	padding: 0;
+}
+
+[layout="row"] {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flexbox;
+	display: flex;
+}
+
+.fsr {
+    
+	-webkit-flex-shrink: 0;
+	flex-shrink: 0;
+}
+.fg {
+	-webkit-flex-grow: 1;
+    flex-grow: 1;
+    
+}
+
+#progressbar {
+    background-color: white;
+    border-radius: 13px;
+    /* (height of inner div) / 2 + padding */
+    /* padding: 3px; */
+  }
+  
+  #progressbar>div {
+    background-color:#263238;
+    width: 60%;
+    /* Adjust with JavaScript */
+    height: 10px;
+    /* border-radius: 10px; */
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+  }
 
 /* ============================================================ RESPONSIVE ============================================================ */
 @media (max-width: 1200px) {
@@ -92,14 +200,15 @@ a {
     .header, .aboutme, .contactme, .myskills {
         
         flex: 50%;
+        /* width: 50%; */
     }
     
     #nino-leftside {
-        flex : 100%;
+        flex: 100%;
     }
 
     #nino-rightside {
-        flex : 100%;
+        flex: 100%;
     }
 }
 @media (max-width: 767px) {
