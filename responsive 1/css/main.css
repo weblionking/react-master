@@ -1,0 +1,117 @@
+@import 'https://fonts.googleapis.com/css?family=Roboto+Slab:300,400,700';
+@import 'https://fonts.googleapis.com/css?family=Mr+De+Haviland';
+
+html, body {
+	margin: 0;
+	padding: 0;
+}
+body {
+	color: #263238;
+	font-size: 13px;
+	font-weight: 300;
+	position: relative;
+	font-family: 'Roboto Slab', serif;
+}
+
+#nino-cvWrap {
+    max-width:960px;
+    margin: 0 auto;
+}
+
+#mainmenu {
+    margin: 15px 0;
+}
+
+#mainmenu ul {
+    text-align: right;
+}
+
+#mainmenu ul li {
+    list-style: none;
+}
+
+#mainmenu ul li a { 
+    float : right;
+    padding: 10px;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+
+a {
+    text-decoration: none;
+    outline: none;
+    color: #263238;
+    transition: all .3s ease-in-out;
+}
+
+.fw {
+    display : flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+#nino-leftside {
+    
+    flex: 30%;
+
+    display: flex;
+    flex-wrap: wrap;
+    background: #37474f;
+    color:#fdfdfe;
+    text-align: center;
+    
+}
+
+#nino-rightside {
+    
+    flex : 70%;
+
+    background:#263238;
+    color:#fdfdfe;
+    text-align: center;
+    
+}
+
+
+.header, .aboutme, .contactme, .myskills {
+    
+    border: none;
+    
+    flex: 100%;
+
+    height:100px;
+    outline: 1px solid green;
+}
+
+/* ============================================================ RESPONSIVE ============================================================ */
+@media (max-width: 1200px) {
+	
+}
+@media (max-width: 991px) {
+    .header, .aboutme, .contactme, .myskills {
+        
+        flex: 50%;
+    }
+    
+    #nino-leftside {
+        flex : 100%;
+    }
+
+    #nino-rightside {
+        flex : 100%;
+    }
+}
+@media (max-width: 767px) {
+	.header, .aboutme, .contactme, .myskills {
+        
+        flex: 100%;
+    }
+	
+}
+@media (max-width: 640px) {
+	
+}
+@media (max-width: 480px) {
+	
+}
