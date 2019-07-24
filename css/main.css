@@ -57,6 +57,7 @@ a {
     display : flex;
     flex-wrap: wrap;
     width: 100%;
+    
 }
 
 #nino-leftside {
@@ -64,6 +65,7 @@ a {
     flex: 30%;
     /* width: 30%; */
     display: flex;
+    align-content: flex-start;
     flex-wrap: wrap;
     background: #37474f;
     color:#fdfdfe;
@@ -71,16 +73,23 @@ a {
 
 #nino-rightside {
     
-    flex : 70%;
+    flex : 69%;
     /* width : 70%; */
+
+    border: 1px solid #d2d2d2;
+    
 }
 
-
+#nino-rightside .section{
+    padding: 30px 40px;
+    /* margin-bottom: 50px; */
+}
 .header, .aboutme, .contactme, .myskills {
     
     border: none;
     
     flex: 100%;
+    /* height: auto; */
     
 }
 
@@ -89,8 +98,19 @@ a {
      padding: 35px 0; 
     margin-bottom: 35px; 
     background: #263238;
+    height: fit-content;
+}
+.aboutme {
+    height: fit-content;
 }
 
+.contactme {
+    height: fit-content;
+}
+
+.myskills {
+    height: auto;
+}
 
 .header .avatar {
     width: 150px;
@@ -118,9 +138,9 @@ h1, h2, h3, h4, h5, h6 {
     /* padding: 0 30px; */
 }
  #nino-leftside .mysection {
-    padding: 0 30px;
+    padding: 10px 30px;
  }
-#nino-leftside .section .nino-sectionHeading{
+.section .nino-sectionHeading{
     font-size: 16px;
     font-weight: 700;
 }
@@ -167,7 +187,7 @@ p, form, input {
 .fsr {
     
 	-webkit-flex-shrink: 0;
-	flex-shrink: 0;
+    flex-shrink: 0;
 }
 .fg {
 	-webkit-flex-grow: 1;
@@ -192,6 +212,68 @@ p, form, input {
     border-bottom-left-radius: 10px;
   }
 
+  #nino-rightside .section .nino-sectionHeading {
+    font-size: 24px;
+  }
+
+  #nino-rightside .section .nino-sectionContent > .inner {
+    margin-left: 55px;
+  }
+
+  article {
+    margin: 30px 0;
+    }
+
+    article .nino-articleTitle {
+        font-size: 20px;
+        margin: 0 0 5px;
+    }
+
+    article .nino-articleMeta {
+        color: #90a4ae;
+        margin-bottom: 10px;
+        font-weight: 400;
+    }
+
+    article .nino-articleMeta span {
+        display: inline-block;
+        margin-right: 10px;
+    }
+
+    article .nino-articleMeta .nino-icon {
+        font-size: 17px;
+        margin-right: 5px;
+        position: relative;
+        top: 2px;
+    }
+
+    #nino-rightside .nino-sectionContent .nino-languages {
+        text-align: center;
+        
+        
+        /* position: relative; */
+
+    }
+
+    #nino-rightside .nino-sectionContent .nino-languages div{
+        /* flex:30%; */
+    }
+
+    .nino-sectionContent .nino-languages .languageName {
+        margin: 15px 0 5px;
+        font-size: 18px;
+    }
+
+    #nino-rightside .nino-sectionHeading .nino-icon {
+        background: #263238;
+        padding: 8px;
+        border-radius: 50%;
+        margin-right: 10px;
+        font-size: 20px;
+        color: #fff;
+    }
+
+    
 /* ============================================================ RESPONSIVE ============================================================ */
 @media (max-width: 1200px) {
 	
