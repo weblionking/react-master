@@ -152,6 +152,7 @@ h1, h2, h3, h4, h5, h6 {
     margin-right: 10px;
     font-size: 20px;
     color: #fff;
+    text-align: center;
 }
 
 #nino-leftSide .nino-listWithIcon > li {
@@ -166,7 +167,7 @@ h1, h2, h3, h4, h5, h6 {
 	font-size: 14px;
 }
 
-#nino-leftSide ul li {
+#nino-leftSide ul, ul li {
     list-style: none;
 }
 
@@ -199,11 +200,15 @@ p, form, input {
     
 	-webkit-flex-shrink: 0;
     flex-shrink: 0;
+    height: 43px;
 }
 .fg {
 	-webkit-flex-grow: 1;
     flex-grow: 1;
-    
+}
+
+.mdi {
+    display: inline-block;
 }
 
 #progressbar {
@@ -346,6 +351,7 @@ p, form, input {
     .cartoon-article {
         /* flex-grow: 30%; */
         width: 30%;
+        margin: 30px 0;
     }
 
     img {
@@ -357,11 +363,7 @@ p, form, input {
         padding: 30px 40px;
     }
 
-    .cartoon-article {
-        margin: 30px 0;
-        
-    }
-
+    
     .cartoon-article > * {
         padding: 0 15px;
     }
